@@ -1,0 +1,309 @@
+:root{
+    --background-gourier: #4E16A8;
+
+}
+.h-3r {
+    height: 3rem;
+}
+.h-4r {
+    height: 4rem;
+}
+.h-5r {
+    height: 5rem;
+}
+.h-6r {
+    height: 6rem;
+}
+.h-7r {
+    height: 7rem;
+}
+.h-90pe {
+    height: 90%;
+}
+.h-80pe {
+    height: 80%;
+}
+.h-70pe {
+    height: 70%;
+}
+
+.h-100pe{
+    height: 100%;
+}
+
+.w-100pe{
+    width: 100%;
+}
+.w-20pe{
+    width: 20%;
+}
+
+/* Fonts */
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* buttons */
+.main-btn{
+    background-color: white;
+    width: 109px;
+    height: 43px;
+    color: black;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.main-btn:hover{
+    background-color: var(--background-gourier);
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+/* input */
+
+input {
+    background-color: #D2D2D2;
+    border: none;
+    width: 350px;
+    height: 50px;
+}
+.early-access-button {
+    background-color: #4E16A8;
+    border: none;
+    height: 50px;
+    width: 140px;
+    margin-left: 10px;
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* body{
+    height: 400vh;
+} */
+nav{
+    position: fixed;
+    z-index: 100;
+}
+
+/* main links */
+.main-link{
+    color: white !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+.main-link:hover{
+    color: rgba(177, 169, 152, 0.991);
+}
+
+@media screen and (min-width:500px) {
+    .offcanvas-button {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .navlinks {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #first-arrow, #second-arrow{
+        display:none;
+    }
+}
+@media screen and (max-width:550px) {
+    .shipment-carcas > *, .early-div > *, #input-div > *, .early-div, #input-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 ;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .shipment-carcas button {
+        margin: 5px !important;
+        width: 60%;
+        align-self: center;
+    }
+    .early-div img {
+        display: none;
+    }
+    .early-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: none !important;
+    }
+    
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #4E16A8;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+}
+#main h1 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+}
+#main h1 span {
+    font-weight: 700;
+}
+
+
+h3{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 2rem 4rem !important;
+    margin: 0;
+}
+h3 span, p span {
+    color: #4E16A8;
+}
+.why-us-list{
+    padding: 1rem 4rem;
+}
+
+
+#first-arrow, #second-arrow {
+    position: absolute;
+    height: 35%;
+}
+#first-arrow{
+    left: 0;
+    bottom: 65px;
+
+}
+#second-arrow{
+    right: 0;
+    top: 65px;
+
+    transform: rotate(180deg)
+}
+#our-team{
+    display: flex;
+    flex-direction: column;
+}
+.members-div{
+    width: 70%;
+    display: flex;
+    /* justify-content: center; */
+    align-self: center;
+}
+.member-div{
+    width: 15rem;
+    height: 17rem;
+    background:#8E8E8E;
+    position: relative;
+    margin: 2rem 2rem;
+}
+#kebir-div{
+    background: url("../img/peyser.jpg") center bottom;
+}
+.member-name{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    height: 25%;
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.member-name span{
+    font-weight: 600;
+}
+.member-name p{
+    font-size: 14px;
+}
+#shipment{
+    height: 70vh;
+}
+.shipment-carcas{
+    display: flex;
+    flex-direction: column;
+    border: 3px black;
+    margin: 0;
+    padding: 0;
+}
+.shipment-carcas div {
+    display: inline-block;
+}
+.shipment-carcas img {
+    width: 50px;
+    height: 50px;
+}
+.early-div{
+    display: flex;
+    justify-content: center;
+}
+.early-div p {
+    display: inline;
+    padding: 0 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.early-div img {
+    padding: 0 5px 0 20px;
+    box-sizing: content-box;
+}
+.shipments{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #4E16A8;
+    height: 5rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .row .col {
+    display: flex;
+    justify-content: center;
+}
+.footer-mobile{
+    background-color: #4E16A8;
+}
+
+
+
+/* offcanvas  */
+.offcanvas-navbar{
+    background-color: #4E16A8;
+}
+
+.section-ender{
+    width: 18%;
+    text-align: center;
+}
